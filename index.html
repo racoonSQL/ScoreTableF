@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Score</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</head>
+<body>
+    <div class="form">
+        <div class="container">
+            <div class="block">
+                <h1 class="title">Class Marksheet</h1>
+                <div class="search__box">
+                    <input type="text" id="search" placeholder="Tìm kiếm">
+                </div>
+                <div>
+                    <label>Họ tên</label>
+                    <input type="text" id="ten">
+                </div>
+                <div id="ten_err"></div>
+                <div>
+                    <label>Điểm toán</label>
+                    <input type="text" id="toan">
+                </div>
+                <div id="toan_err"></div>
+                <div>
+                    <label>Điểm lý</label>
+                    <input type="text" id="ly">
+                </div>
+                <div id="ly_err"></div>
+                <div>
+                    <label>Điểm hoá</label>
+                    <input type="text" id="hoa">
+                </div>
+                <div id="hoa_err"></div>
+                <button type="button" id="add">Nhập</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table">
+        <div class="container">
+            <div class="table__block">
+                <table id="myTable">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ tên</th>
+                            <th>Toán</th>
+                            <th>Lý</th>
+                            <th>Hoá</th>
+                            <th>Trung bình</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="caculate">
+        <div class="container">
+            <div class="caculate__block">
+                <button type="button" id="average">Tính điểm trung bình</button>
+                <button type="button" id="specify">Xác định học sinh giỏi</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

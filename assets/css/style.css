@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+body {
+    background-color: rgba(166, 112, 216, 0.198);
+}
+.container {
+    width: 100%;
+    padding: 0 12px;
+}
+#ten_err,
+#toan_err,
+#ly_err,
+#hoa_err {
+    max-width: 170px;
+    height: 30px;
+    padding: 2px 5px 5px 5px;
+    margin-left: 70px;
+    font-size: 16px;
+}
+
+/* ==== form ===== */
+.form {
+    padding: 10px 0 10px;
+}
+.form .block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form .block h1 {
+    font-size: 32px;
+}
+.form .block label {
+    white-space: nowrap;
+}
+.form .block div {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.form .block div input {
+    width: 200px;
+}
+.form .block .search__box {
+    margin-bottom: 30px;
+}
+.form .block .search__box input {
+    width: 100%;
+}
+.form .block .search__box input::placeholder {
+    text-align: center;
+}
+.form .block button {
+    margin: 10px 0;
+    padding: 10px 25px;
+    background-color: rgb(139, 253, 133);
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all .3s;
+}
+.form .block button:hover {
+    background-color: rgb(91, 223, 84);
+    border: 1px solid rgb(117, 207, 243);
+}
+
+/* ==== table ===== */
+.table {
+    padding: 10px 0;
+}
+.table .table__block {
+    overflow-x: auto;
+}
+.table .table__block table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table .table__block table th,
+.table .table__block table td {
+    border: 1px solid rgb(131, 177, 223);
+    height: 24px;
+    text-align: center;
+    padding: 5px;
+    white-space: nowrap;
+}
+
+/* ==== caculate ===== */
+.caculate {
+    padding: 10px 0;
+}
+.caculate .caculate__block {
+    text-align: center;
+}
+.caculate button {
+    width: 180px;
+    margin: 10px 10px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all .3s;
+}
+.caculate button:hover {
+    border: 1px solid rgb(117, 207, 243);
+}
+.caculate button:first-child {
+    background-color: rgb(248, 255, 157);
+}
+.caculate button:first-child:hover {
+    background-color: rgb(222, 231, 101);
+}
+.caculate button:last-child {
+    background-color: rgb(250, 147, 121);
+}
+.caculate button:last-child:hover {
+    background-color: rgb(231, 113, 84);
+}
+
+@media (max-width: 320px) {
+    .form .block div {
+        width: 100%;
+    }
+}
+@media (max-width: 575.98px) {
+    * {
+        font-size: 16px;
+    }
+}
